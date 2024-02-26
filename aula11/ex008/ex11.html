@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Nacionalidade</title>
+    
+</head>
+<body>
+    <h1>Sua Nacionalidade</h1>
+    Aonde você nasceu: <input type="texto" name="Nacionalidade" id="Nacionalidade">
+
+    <input type="button" value="Averiguar" onclick="testar()">
+    <div id="lugar"></div>
+</body>
+</html>
+
+<script>
+    function testar(){
+        var pais = window.document.querySelector('#nacionalidade').value;
+        var lugar = window.document.querySelector('#lugar');
+
+        lugar.innerHTML = pais === 'brasil' ? 'Você é brasileiro' : 'Você é estrangeiro';
+
+     
+        
+    }
+    
+  
+</script>
